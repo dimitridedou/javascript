@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script>
+            function displayTime() {
+            var element = document.getElementById('clock');
+            var currentTime = new Date();
+            var hours = currentTime.getHours();
+            var minutes = currentTime.getMinutes();
+            var seconds = currentTime.getSeconds();
+            hours = (hours < 10 ? "0" : "") + hours;
+            minutes = (minutes < 10 ? "0" : "") + minutes;
+            seconds = (seconds < 10 ? "0" : "") + seconds;
+            var currentTimeString = hours + ":" + minutes + ":" + seconds;
+            element.innerHTML = currentTimeString;
+            }
+            setInterval(displayTime, 1000);
+        </script>
+    </head>
+    <body>
+        <a href="https://github.com/GrCodeClub/JavaScript/blob/main/clock.js" target="_blank">Προβολή πηγαίου κώδικα <b>clock.js</b></a>
+        <h1 id="clock"></h1>
+    </body>
+</html>
