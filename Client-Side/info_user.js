@@ -43,7 +43,7 @@
         // Ημερομηνία & ώρα
         localDate: new Date().toLocaleString(),
 
-        // 🔒 Εγκατεστημένα APIs (ενδεικτικά)
+        // Εγκατεστημένα APIs (ενδεικτικά)
         geolocation: !!navigator.geolocation,
         bluetooth: !!navigator.bluetooth,
         clipboard: !!navigator.clipboard,
