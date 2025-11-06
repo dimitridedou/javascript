@@ -5,6 +5,12 @@
   <title>Πληροφορίες Χρήστη</title>
 </head>
 <body>
+  <p>Ο κώδικας:</p>
+  <ol>
+    <li>χρησιμοποιεί Web APIs του browser (navigator, screen, window, Intl, document)</li>
+    <li>συλλέγει στοιχεία για το σύστημα του χρήστη (π.χ. ανάλυση οθόνης, γλώσσα, GPU, timezone, CPU)</li>
+    <li>τα εμφανίζει στη console ή στη σελίδα (DOM manipulation)</li>
+  </ol>
   <script>
     async function getUserInfo() {
       const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
